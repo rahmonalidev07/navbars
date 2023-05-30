@@ -1,33 +1,99 @@
-h1 {
-  color: red;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+
+html {
+  height: 100%;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
-.header {
-  padding-top: 3.2rem;
-  padding-bottom: 2rem;
+
+ul,
+ol {
+  list-style: none;
 }
-.header-container {
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+/*  */
+.header {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: azure;
+}
+.header__container {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 .site-link {
   font-size: 3.5rem;
-  color: aquamarine;
+  color: #333;
 }
-.site-link-logo {
+.stie-link__logo {
 }
+
 .sitenav {
 }
-.sitenav-list {
+.sitenav__list {
   display: flex;
   gap: 3rem;
 }
-.sitenav-item {
+.sitenav__item {
 }
-.sitenav-link {
+.sitenav__link {
   font-size: 2rem;
-  color: darkred;
+  color: darksalmon;
+}
+
+/* HERO */
+
+.main {
+}
+.hero {
+  height: 90vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/hero-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.hero__container {
+}
+.hero__info {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #fff;
+}
+
+.hero__info h1 {
+  font-size: 5rem;
+}
+
+.hero__info p {
+  font-size: 2rem;
 }
